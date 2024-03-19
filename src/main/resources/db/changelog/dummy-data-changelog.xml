@@ -1,0 +1,50 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:pro="http://www.liquibase.org/xml/ns/pro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-latest.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <changeSet author="AdminS (generated)" id="1710666072922-1">
+        <insert tableName="app_users">
+            <column name="id">0</column>
+            <column name="full_name">admin</column>
+            <column name="password">$2a$10$RDvuzcPWBNik5nOD5TZ3ne9J3UC4yv/22gYK8pEdECQh7OQid2I/O</column>
+            <column name="phone">0912345678</column>
+        </insert>
+        <insert tableName="products">
+            <column name="id">0</column>
+            <column name="price">29.9</column>
+            <column name="description">The traditional cappuccino consists of a single shot of espresso, into which the barista pours the heated milk, followed by a thick layer of milk foam.</column>
+            <column name="image">https://picsum.photos/300/300</column>
+            <column name="name">Cappuccino Coffee</column>
+        </insert>
+        <insert tableName="products">
+            <column name="id">1</column>
+            <column name="price">39.9</column>
+            <column name="description">Italian style of coffee that's brewed very strong and served in a small cup.</column>
+            <column name="image">https://picsum.photos/300/300</column>
+            <column name="name">Espresso Coffee</column>
+        </insert>
+        <insert tableName="shops">
+            <column name="id">0</column>
+            <column name="shop_address">District 1</column>
+            <column name="shop_name">Coffee House district 1</column>
+        </insert>
+        <insert tableName="shops">
+            <column name="id">1</column>
+            <column name="shop_address">District 3</column>
+            <column name="shop_name">Coffee House district 3</column>
+        </insert>
+        <insert tableName="queues">
+            <column name="id">0</column>
+            <column name="max_queue_size">10</column>
+            <column name="shop_id">0</column>
+        </insert>
+        <insert tableName="queues">
+            <column name="id">1</column>
+            <column name="max_queue_size">5</column>
+            <column name="shop_id">0</column>
+        </insert>
+        <insert tableName="queues">
+            <column name="id">2</column>
+            <column name="max_queue_size">10</column>
+            <column name="shop_id">1</column>
+        </insert>
+    </changeSet>
+</databaseChangeLog>
